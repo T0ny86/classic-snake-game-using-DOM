@@ -1,7 +1,7 @@
 *{
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    /* box-sizing: border-box; */
 }
 
 .game-wrapper{
@@ -13,8 +13,25 @@
 }
 
 #game-grid{
-    width: 50vmin;
-    height: 50vmin;
+    width: 40vmin;
+    height: 40vmin;
     border: 2px solid green;
-    
+    display: grid;
+    grid-template-columns: repeat(20, 2vmin);
+}
+
+.game-cell{
+    background-color: black;
+    /* border: 1px solid gainsboro; */
+    width: 2vmin;
+    height: 2vmin;
+}
+
+.snake-head{
+    background-color: gold;
+    border: 1px solid bisque;
+}
+
+.apple{
+    background-color: greenyellow;
 }
